@@ -1,0 +1,66 @@
+.location {
+  font-size: 20px;
+  padding: 0 auto;
+}
+
+.weather-today {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.weatherIcon {
+  border-radius: 50%;
+}
+
+.weather-container {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px rgb(219, 208, 208);
+  background-image: linear-gradient(to right, rgb(144, 198, 202), white);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.date {
+  font-weight: bold;
+
+}
+
+.weather-card,
+.d-flex {
+  display: flex;
+  gap: 20px;
+}
+.weather-card{
+  padding: 10px;
+  justify-content: space-around;
+}
+.weather-card:hover{
+  background-color: rgba(161, 159, 159, 0.445);
+  border-radius: 20px;
+}
+
+.dashboard-link{
+  font-size: 25px;
+  text-decoration: none;
+  color: inherit;
+  background-color: rgba(122, 202, 241, 0.457);
+  border: 3px rgb(0, 179, 255) solid;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.dashboard-link:hover{
+  background-color: rgba(82, 193, 241, 0.434);
+}
+.loader {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

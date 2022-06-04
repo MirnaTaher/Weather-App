@@ -1,0 +1,85 @@
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+.header,
+.time-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    box-shadow: 5px 5px 15px rgb(219, 208, 208);
+    margin-bottom: 30px;
+    padding: 15px 0 !important;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.time-container{
+    width: 30%;
+}
+
+.navLink {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.date,
+.temp,
+.desc,
+.icon {
+    width: 20%;
+}
+
+.navLink img {
+    width: 40px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 900px) {
+    .time-container {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .weather-card {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .date,
+    .temp,
+    .desc,
+    .icon {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .time-container {
+        flex-direction: column;
+        order: 3;
+    }
+    .time-container > h4{
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .date,
+    .temp,
+    .desc,
+    .icon {
+        width: 80%;
+    }
+}
